@@ -15,7 +15,8 @@ This program expects you have your data set in the following scheme:
 ---class 1
 ---class 2
 ---class 3
----etc```
+---etc
+```
 
 To run, first run:
 	
