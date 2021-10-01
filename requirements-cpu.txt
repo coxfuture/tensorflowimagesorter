@@ -1,0 +1,6 @@
+tensorflow
+matplotlib
+numpy
+shutil
+glob
+tqdm
