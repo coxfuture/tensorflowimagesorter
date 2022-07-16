@@ -32,7 +32,8 @@ for root, dirs, files in os.walk(test_directory):
   for test_image in tqdm(files,desc = "Sorting:"):
 
     fullpath = os.path.join(root,test_image)
-
+    if fullpath.split('.')[-1] == 'ini':
+      continue
     img = keras.preprocessing.image.load_img(fullpath, target_size=(img_height, img_width))
     img_array = keras.preprocessing.image.img_to_array(img)
     img_array = tf.expand_dims(img_array, 0)
